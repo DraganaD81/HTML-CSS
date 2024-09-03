@@ -17,12 +17,25 @@
         <p>id selector</p>
     </section>
 
+    <section class="universal">
+        <h2><span>*</span>Universal</h2>
+        <p>This selects EVERYTHING. Every single thing</p>
+        <p>(except ::before and ::after...).</p>
+        <ul>
+            <li>Every</li>
+            <li>Single</li>
+            <li>Thing</li>
+            <li class="list-item">Everything</li>
+        </ul>
+        <p class="marked">Yup, even this, and, well, everything else too.</p>
+    </section>
+
     <section class="direct-children">
         <h2><span></span>Direct children</h2>
         <p>You can create selector like this:</p>
         <code>.direct-children p</code>
         <p>That will select all paragraphs inside of .direct-children</p>
-        <div class="example"><p>But <code>.direct-children > p</code> will not select this paragraph.</p></div>
+        <div class="example"><p>But <code>.direct-children > p </code> will not select this paragraph.</p></div>
     </section>
 
     <section class="adjacent-sibiling">
@@ -45,7 +58,13 @@
 
     <section class="attribute">
         <h2><span>[ ]</span>Attribute</h2>
-        <a href="https://www.google.com" class="link-one"></a>
+        <a href="https://www.google.com" class="link-one">Google</a>
+        <a href="https://www.google.ca" class="link-two">Google Canada</a>
+        <a href="about.html" class="link-three">About page</a>
+        <a href="https://awesomesocialnetwork.com" class="link-four" target="_blank">Socialize</a>
+        <a href="ebook.pdf" class="link-five">PDF file</a>
+        <a href="#" class="another-link">Yet another link</a>
     </section>
+    
 </body>
 </html>
