@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Advanced CSS Selectors</h1>
+
+    <section class="the-ones-you-know">
+        <h2>You know these (I hope)</h2>
+        <p>element selector</p>
+        <p>class selector</p>
+        <p>id selector</p>
+    </section>
+
+    <section class="direct-children">
+        <h2><span></span>Direct children</h2>
+        <p>You can create selector like this:</p>
+        <code>.direct-children p</code>
+        <p>That will select all paragraphs inside of .direct-children</p>
+        <div class="example"><p>But <code>.direct-children > p</code> will not select this paragraph.</p></div>
+    </section>
+
+    <section class="adjacent-sibiling">
+        <h2> <span>+</span>Adjacent sibiling</h2>
+        <div class="box"></div>
+        <div class="box"></div>
+        <a href="#">Not a box</a>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+    <section class="general-sibiling">
+        <h2> <span>~</span>General Sibiling</h2>
+        <div class="box"></div>
+        <div class="box"></div>
+        <a href="#">Not a box</a>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+    <section class="attribute">
+        <h2><span>[ ]</span>Attribute</h2>
+        <a href="https://www.google.com" class="link-one"></a>
+    </section>
+</body>
+</html>

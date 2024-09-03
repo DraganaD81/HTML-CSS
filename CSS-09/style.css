@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* This is all just for styling purposes
+// The demo content is lower demo */
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+body {
+    background: #f5f5f5;
+    color: #18314f;
+    font-family: 'Crimson text', serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+
+}
+
+.box {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    background: gray;
+}
+
+/* Direct  children*/
+.direct-children p {
+    color: red;
+}
+.direct-children > p {
+    color: green;
+} /*just direct not other deeper inside structure*/
+
+/* Adjacent sibiling */
+.adjacent-sibiling .box + .box{
+    background: red;
+    margin-left: 100px;
+}
+
+/* General sibiling */
+.general-sibiling .box ~ .box{
+    background: red;
+    margin-left: 100px;
+}
+
+/* Atributes */
+
