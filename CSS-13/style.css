@@ -1,0 +1,83 @@
+body {
+    display: grid;
+    background: linear-gradient(white, rgb(203, 255, 255));
+    height: 100vh;
+    color: rgb(57, 57, 139);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box {
+    display: block;
+    background: white;
+    width: 50vw;
+    height: 50vh;
+    align-items: center;
+    padding: 10em;
+    z-index: -1;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 10);
+}
+
+.title {
+    margin: 0;
+    padding: 3rem;
+    font-size: 4em;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgb(203, 255, 255);
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .2);
+}
+
+.title::after {
+    content: 'JavaScript';
+    display: block;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    align-items: baseline;
+    margin: 0;
+    padding-left: 5rem;
+    padding-top: .5rem;
+    height: 3rem;
+    background: rgb(37, 172, 105);
+    position: relative;
+    top: 1.5rem;
+    left: -5rem;
+    width: calc(100% + 5rem);
+    border: .5rem solid white;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, .2);
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 3rem;
+}
+
+/*.text::before {
+    content: '';
+    display: block;
+    height: .5rem;
+    width: 100%;
+    background: purple;
+    position: relative;
+    left: 0rem;
+    bottom: 1rem;
+}
+*/
+.text::after {
+    content: '';
+    display: block;
+    height: .1rem;
+    width: 100%;
+    background: pink;
+    position: relative;
+    left: 0rem;
+}
