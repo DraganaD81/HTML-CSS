@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+p {
+    font-size: 2em;
+    color: yellow;
+    margin-bottom: .5em;
+    background: plum;
+}
+
+span {
+    color: black;
+    font-size: .6em;
+}
+.elegant {
+    color: red;
+}
+
+#modern {
+    color: purple;
+}
+
+.elegant#modern {
+    color: green;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-weight: 200;
+}
